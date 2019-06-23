@@ -1,0 +1,2 @@
+USERNAME="opensourcecms"
+PASSWORD="opensourcecms"
