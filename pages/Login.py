@@ -20,10 +20,10 @@ class Login(WebGeneric):                     # Passed WebGeneric class as parame
         # self.driver.find_element_by_id("user_pass").send_keys(PWD)
         # self.driver.find_element_by_id("wp-submit").click()
 
-        w=WebGeneric(self.driver)            #### 14 ####
-        w.enter(self.un_id,UN)
-        w.enter(self.pwd_id,PWD)
-        w.submit(self.sb_id)
+        w=WebGeneric(self.driver)                                                            #### 14 ####
+        w.enter("id",self.un_id,UN)
+        w.enter("id",self.pwd_id,PWD)
+        w.submit("id",self.sb_id)                            #  "id"                         #### 16 ####
 
 
 

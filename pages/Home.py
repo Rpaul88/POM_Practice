@@ -18,5 +18,5 @@ class Logout(WebGeneric):                    # Passed WebGeneric class as parame
 
         # self.driver.find_element_by_xpath("//a[text()='Log Out']").click()
         w = WebGeneric(self.driver)                                                            #### 14/15 ####
-        w.submit1(self.logout_xpath)
+        w.submit1("xpath",self.logout_xpath)
 

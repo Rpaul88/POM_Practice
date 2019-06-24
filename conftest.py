@@ -10,7 +10,7 @@ def test_setup(request):       # test_setup-->conftest method name/fixture name
     from selenium import webdriver
     driver = webdriver.Chrome(executable_path="C:/Users/Guest User/PycharmProjects/POM_Framework1/drivers/chromedriver.exe")
     driver.get("https://s1.demo.opensourcecms.com/wordpress/wp-login.php")
-
+    driver.implicitly_wait(30)
     request.cls.driver=driver
 
 # Control ->test_loginout.py                 ##### 2 #####

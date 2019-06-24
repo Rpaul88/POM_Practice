@@ -1,16 +1,16 @@
-from pages.LocatorGeneric import LocatorGeneric                                           #### 16 ####
+from pages.LocatorGeneric import LocatorGeneric                                           #### 17 ####
 
 class WebGeneric(LocatorGeneric):
 
     def __init__(self,driver):   # Created a constructor>>to take driver ref from test file  #### 9 ####
         self.driver=driver
-        LocatorGeneric.__init__(self, driver)                                             #### 17 ####
+        LocatorGeneric.__init__(self, driver)                                             #### 18 ####
 
     # def enter(self,locator,input_val):
-    def enter(self,loc_type,loc_val,inp_val):                                             #### 18 ####
+    def enter(self,loc_type,loc_val,inp_val):                                             #### 19 ####
 
         # self.driver.find_element_by_id(locator).send_keys(input_val)
-        self.locator(loc_type,loc_val).send_keys(inp_val)                                 #### 19 ####
+        self.locator(loc_type,loc_val).send_keys(inp_val)                                 #### 20 ####
 
     # def submit(self,locator):
     def submit(self,loc_type,loc_val):
